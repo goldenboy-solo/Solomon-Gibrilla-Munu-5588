@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Football Agency SL - Matches</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="index.html">
+            <img
+              src="main logo.jpg"
+              alt="Football Agency SL Logo"
+              width="40"
+              height="40"
+            />
+            <span>footballagencysl</span>
+          </a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="players.html">Players</a></li>
+          <li><a href="matches.html" class="active">Matches</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-header">
+        <h1>Fixtures & Results</h1>
+        <h2>The Arena Awaits</h2>
+        <p>
+          Withness the culmination of skills, strategy and determination.<br />
+          From thrilling fixtures,to hard-fought results, every match tells a
+          story of courage and competitation.<br />
+          Stay updated with the latest scores, upcoming fixtures, and league
+        </p>
+      </section>
+
+      <section class="matches-section">
+        <div class="matches-tabs">
+          <button class="tab-btn active" onclick="showTab('fixtures')">
+            Fixtures
+          </button>
+          <button class="tab-btn" onclick="showTab('table')">Table</button>
+          <button class="tab-btn" onclick="showTab('stats')">Stats</button>
+        </div>
+
+        <!-- Fixtures Tab -->
+        <div id="fixtures" class="tab-content active">
+          <div class="season-selector">
+            <label>Matchday</label>
+            <select>
+              <option>Matchday 1</option>
+              <option>Matchday 2</option>
+              <option>Matchday 3</option>
+            </select>
+          </div>
+
+          <div class="results">
+            <h2>Results</h2>
+            <div class="match-result">
+              <span class="team">Hill Station Rangers</span>
+              <span class="score">1 : 3</span>
+              <span class="team">Lumley FC</span>
+            </div>
+            <div class="match-result">
+              <span class="team">Aberdeen Warriors</span>
+              <span class="score">1 : 0</span>
+              <span class="team">Imatt City</span>
+            </div>
+            <div class="match-result">
+              <span class="team">BrookLand</span>
+              <span class="score">4 : 3</span>
+              <span class="team">East Siders</span>
+            </div>
+            <div class="match-result">
+              <span class="team">Western Rovers</span>
+              <span class="score">5 : 3</span>
+              <span class="team">Central City</span>
+            </div>
+            <div class="match-result">
+              <span class="team">Regent Ballers</span>
+              <span class="score">3 : 3</span>
+              <span class="team">Hill Top Dragons</span>
+            </div>
+          </div>
+
+          <div class="upcoming-fixtures">
+            <h2>Up Coming Fixtures</h2>
+            <div class="match-fixture">
+              <span class="team">Western Rovers</span>
+              <span class="time">11:30</span>
+              <span class="team">East Siders</span>
+            </div>
+            <div class="match-fixture">
+              <span class="team">Lumley FC</span>
+              <span class="time">14:30</span>
+              <span class="team">Aberdeen Warriors</span>
+            </div>
+            <div class="match-fixture">
+              <span class="team">Hill Top Dragons</span>
+              <span class="time">14:30</span>
+              <span class="team">Hill Station Rangers</span>
+            </div>
+            <div class="match-fixture">
+              <span class="team">Regent Ballers</span>
+              <span class="time">17:30</span>
+              <span class="team">Imatt City</span>
+            </div>
+            <div class="match-fixture">
+              <span class="team">Central City</span>
+              <span class="time">20:00</span>
+              <span class="team">BrookLand</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Table Tab -->
+        <div id="table" class="tab-content">
+          <div class="season-selector">
+            <label>Season</label>
+            <select>
+              <option>2025</option>
+              <option>2024</option>
+            </select>
+          </div>
+
+          <table class="league-table">
+            <thead>
+              <tr>
+                <th>Pos</th>
+                <th>Team</th>
+                <th>P</th>
+                <th>W</th>
+                <th>D</th>
+                <th>L</th>
+                <th>GF</th>
+                <th>GA</th>
+                <th>GD</th>
+                <th>Pts</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>BrookLand</td>
+                <td>10</td>
+                <td>8</td>
+                <td>1</td>
+                <td>1</td>
+                <td>25</td>
+                <td>8</td>
+                <td>+17</td>
+                <td>25</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Hill Station Rangers</td>
+                <td>10</td>
+                <td>7</td>
+                <td>2</td>
+                <td>1</td>
+                <td>22</td>
+                <td>10</td>
+                <td>+12</td>
+                <td>23</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Regent Ballers</td>
+                <td>10</td>
+                <td>6</td>
+                <td>3</td>
+                <td>1</td>
+                <td>18</td>
+                <td>9</td>
+                <td>+9</td>
+                <td>21</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>East Siders</td>
+                <td>10</td>
+                <td>5</td>
+                <td>2</td>
+                <td>3</td>
+                <td>16</td>
+                <td>12</td>
+                <td>+4</td>
+                <td>17</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Central City</td>
+                <td>10</td>
+                <td>4</td>
+                <td>3</td>
+                <td>3</td>
+                <td>15</td>
+                <td>14</td>
+                <td>+1</td>
+                <td>15</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>Imatt City</td>
+                <td>10</td>
+                <td>3</td>
+                <td>2</td>
+                <td>5</td>
+                <td>12</td>
+                <td>18</td>
+                <td>-6</td>
+                <td>11</td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>Lumley FC</td>
+                <td>10</td>
+                <td>2</td>
+                <td>3</td>
+                <td>5</td>
+                <td>10</td>
+                <td>20</td>
+                <td>-10</td>
+                <td>9</td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>Aberdeen Warriors</td>
+                <td>10</td>
+                <td>1</td>
+                <td>2</td>
+                <td>7</td>
+                <td>8</td>
+                <td>22</td>
+                <td>-14</td>
+                <td>5</td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>Hill Top Dragons</td>
+                <td>10</td>
+                <td>0</td>
+                <td>1</td>
+                <td>9</td>
+                <td>5</td>
+                <td>25</td>
+                <td>-20</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>Western Rovers</td>
+                <td>10</td>
+                <td>0</td>
+                <td>0</td>
+                <td>10</td>
+                <td>4</td>
+                <td>30</td>
+                <td>-26</td>
+                <td>0</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Stats Tab -->
+        <div id="stats" class="tab-content">
+          <div class="season-selector">
+            <label>Season</label>
+            <select>
+              <option>2025</option>
+              <option>2024</option>
+            </select>
+          </div>
+
+          <div class="stats-grid">
+            <div class="stats-column">
+              <h2>Goals</h2>
+              <div class="stat-item">
+                <span class="rank">1</span>
+                <span class="player-name">S. Munu</span>
+                <span class="stat-value">25</span>
+              </div>
+              <div class="stat-item">
+                <span class="rank">2</span>
+                <span class="player-name">K. Kamara</span>
+                <span class="stat-value">22</span>
+              </div>
+              <div class="stat-item">
+                <span class="rank">3</span>
+                <span class="player-name">H. Sesay</span>
+                <span class="stat-value">18</span>
+              </div>
+            </div>
+
+            <div class="stats-column">
+              <h2>Assists</h2>
+              <div class="stat-item">
+                <span class="rank">1</span>
+                <span class="player-name">A. Jawara</span>
+                <span class="stat-value">16</span>
+              </div>
+              <div class="stat-item">
+                <span class="rank">2</span>
+                <span class="player-name">J.Sesay</span>
+                <span class="stat-value">12</span>
+              </div>
+              <div class="stat-item">
+                <span class="rank">3</span>
+                <span class="player-name">S. Turay</span>
+                <span class="stat-value">10</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Football Agency SL. All rights reserved.</p>
+    </footer>
+
+    <script>
+      function showTab(tabName) {
+        // Hide all tabs
+        const tabs = document.querySelectorAll(".tab-content");
+        tabs.forEach((tab) => tab.classList.remove("active"));
+
+        // Remove active class from all buttons
+        const buttons = document.querySelectorAll(".tab-btn");
+        buttons.forEach((btn) => btn.classList.remove("active"));
+
+        // Show selected tab
+        document.getElementById(tabName).classList.add("active");
+
+        // Add active class to clicked button
+        event.target.classList.add("active");
+      }
+    </script>
+  </body>
+</html>
